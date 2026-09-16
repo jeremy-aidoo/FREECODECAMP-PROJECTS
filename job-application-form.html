@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DEEP EXPRESSION TECH HUB</title>
+</head>
+
+<body>
+    <h1 id="application-form">Job Application Form</h1>
+    <p id="description">Thank you for your interest in joining our team. Please complete the application form below with
+        accurate and up-to-date information.</p>
+    <form id="job-application-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname" id="name-label">Full Name
+                <input required type="text" id="fullname" name="fullname">
+            </label>
+            <label for="email" id="email-label">Email Address
+                <input required type="email" id="email" name="email" placeholder="eg.jj@gmail.com">
+            </label>
+            <label for="phone" id="number-label">Phone Number
+                <input required type="number" id="phone" name="phone">
+            </label>
+            <label for="date-of-birth" id="date-label">Date of Birth
+                <input required type="date" id="date-of-birth" name="date-of-birth">
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Years of Experience</legend>
+            <select id="dropdown" name="experience">
+                <option value="" disabled selected>Select your experience</option>
+                <option value="less-than-1-year">Less than 1 year</option>
+                <option value="1-2-years">1-2 years</option>
+                <option value="3-5-years">3-5 years</option>
+                <option value="5-plus-years">5+ years</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Employment Type Preferred</legend>
+            <label><input type="radio" name="employment-type" value="full-time">Full Time</label>
+            <label><input type="radio" name="employment-type" value="part-time">Part Time</label>
+            <label><input type="radio" name="employment-type" value="remote">Remote</label>
+            <label><input type="radio" name="employment-type" value="contract">Contract</label>
+        </fieldset>
+        <fieldset>
+            <legend>Skills</legend>
+            <label><input type="checkbox" name="skills" value="html">HTML</label>
+            <label><input type="checkbox" name="skills" value="css">CSS</label>
+            <label><input type="checkbox" name="skills" value="javascript">JavaScript</label>
+            <label><input type="checkbox" name="skills" value="react">React</label>
+            <label><input type="checkbox" name="skills" value="python">Python</label>
+            <label><input type="checkbox" name="skills" value="git">Git</label>
+            <label><input type="checkbox" name="skills" value="figma">Figma</label>
+        </fieldset>
+        <fieldset>
+            <legend>About You</legend>
+            <label for="heard">How did you hear about us?
+                <select id="heard" name="heard-about-us">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="linkedin">LinkedIn</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="friend">Friend Referral</option>
+                    <option value="job-board">Job Board</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            <label for="cover-letter">Cover Letter
+                <textarea id="cover-letter" name="cover-letter" placeholder="Write your cover letter here"></textarea>
+            </label>
+        </fieldset>
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+
+</html>

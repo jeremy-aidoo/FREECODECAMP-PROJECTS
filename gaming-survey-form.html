@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">Gaming Experience Survey</h1>
+    <p id="description">Thank you for taking a few minutes to complete this survey. Your responses will help us better
+        understand gamers' preferences, gaming habits, and overall gaming experiences.</p>
+    <form id="survey-form">
+        <label for="name" id="name-label">Name
+            <input required type="text" id="name" placeholder="Enter your full name">
+        </label>
+        <label for="email" id="email-label">Email address
+            <input required type="email" id="email" placeholder="Please enter your email address">
+        </label>
+        <label for="age" id="number-label">Age
+            <input type="number" id="age" min="10" max="100" placeholder="Please enter your age">
+        </label>
+        <fieldset>
+            <legend>Which platform do you use most often?</legend>
+            <select id="dropdown" name="platform">
+                <option value="" disabled selected>Select your platform</option>
+                <option value="playStation">PlayStation</option>
+                <option value="xbox">Xbox</option>
+                <option value="nintendo-switch">Nintendo Switch</option>
+                <option value="mobile">Mobile</option>
+                <option value="pc">PC</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Would you recommend gaming as a hobby to a friend?</legend>
+            <label><input type="radio" value="Definitely" name="hobby">Definitely</label>
+            <label><input type="radio" value="Maybe" name="hobby">Maybe</label>
+            <label><input type="radio" value="Not sure" name="hobby">Not sure</label>
+        </fieldset>
+        <fieldset>
+            <legend>What is your favourite type of game?</legend>
+            <select id="drop" name="game-genre">
+                <option value="" disabled selected>Select a game genre</option>
+                <option value="adventure">Adventure</option>
+                <option value="sports">Sports</option>
+                <option value="racing">Racing</option>
+                <option value="rpg">Role-Playing Game (RPG)</option>
+                <option value="strategy">Strategy</option>
+                <option value="fps">First-Person Shooter</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>What features are most important to you in a game?</legend>
+            <label><input type="checkbox" value="Good Graphics" name="features">Good Graphics</label>
+            <label><input type="checkbox" value="Interesting Story" name="features">Interesting Story</label>
+            <label><input type="checkbox" value="Smooth Performance" name="features">Smooth Performance</label>
+            <label><input type="checkbox" value="Multiplayer Mode" name="features">Multiplayer Mode</label>
+            <label><input type="checkbox" value="Character Customization" name="features">Character
+                Customization</label>
+            <label><input type="checkbox" value="Open World Exploration" name="features">Open World Exploration</label>
+            <label><input type="checkbox" value="Competitive Gameplay" name="features">Competitive Gameplay</label>
+            <label><input type="checkbox" value="Affordable Price" name="features">Affordable Price</label>
+        </fieldset>
+        <label for="message">Additional Comments</label>
+        <textarea id="message" name="message" placeholder="Leave a message"></textarea>
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+
+</html>
